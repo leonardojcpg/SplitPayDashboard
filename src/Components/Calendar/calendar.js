@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import "./styles.css"
 
 const localizer = momentLocalizer(moment);
 
@@ -32,8 +35,27 @@ const MyCalendar = () => {
 
   return (
     <div>
+      <div className="agenda-header">
+        <h2>Unidade São Paulo</h2>
+        <div className="week-days">
+          <div className="day">Seg</div>
+          <div className="day">Ter</div>
+          <div className="day">Qua</div>
+          <div className="day">Qui</div>
+          <div className="day">Sex</div>
+          <div className="day">Sáb</div>
+          <div className="day">Dom</div>
+        </div>
+        <button className="add-button">
+          <FontAwesomeIcon icon={faPlus} />
+        </button>
+      </div>
       <div>
-        <select value={selectedLocation} onChange={handleLocationChange} style={{marginBottom: "2rem"}}>
+        <select
+          value={selectedLocation}
+          onChange={handleLocationChange}
+          style={{ marginBottom: "2rem" }}
+        >
           <option value="unidade-sao-paulo">Unidade São Paulo</option>
           <option value="outra-unidade">Outra Unidade</option>
           <option value="outra-unidade-2">Outra Unidade 2</option>

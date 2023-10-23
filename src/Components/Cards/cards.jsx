@@ -2,6 +2,8 @@ import React from "react";
 import "./styles.css";
 import funcionarios from "./assets/funcionarios.svg";
 import avaliacoes from './assets/avali.svg'
+import clients from "./assets/clients.svg"
+import exams from "./assets/exams.svg"
 
 function Cards() {
   return (
@@ -18,18 +20,18 @@ function Cards() {
       </div>
       <div className="card">
         <h1>Clientes</h1>
-        <img src={funcionarios} alt="" />
+        <img src={clients} alt="" />
         <span>50</span>
       </div>
       <div className="card">
         <h1>Exames</h1>
-        <img src={funcionarios} alt="" />
+        <img src={exams} alt="" />
         <span>13</span>
       </div>
       <div className="card">
         <h1>Unidades</h1>
         <img src={funcionarios} alt="" />
-        <span>15</span>{" "}
+        <span>15</span>
       </div>
 
       <div className="filters">

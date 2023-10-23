@@ -1,0 +1,91 @@
+
+.headerContainer {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 18.5625rem;
+    width: 73.9375rem;
+    height: 4.1875rem;
+    border-bottom: .0625rem solid var(--Stroke, #e8e8e8);
+    background: #fff;
+  }
+  
+  .headerContainer h1 {
+    margin-left: 2.5rem;
+    color: var(--text-100, #1c1c1c);
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .searchInput {
+    margin-top: .625rem;
+    margin-left: 6.25rem;
+    width: 24.25rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border-radius: .5rem;
+    border: .0625rem solid var(--Stroke, #e8e8e8);
+    background: var(--White, #fff);
+  }
+  
+  .search-icon-input {
+    font-size: 1.2rem;
+    color: #a9a9a9;
+    margin-left: -1.875rem;
+  }
+  
+  .headerContainer {
+    display: flex;
+    position: relative;
+    left: 0;
+    width: 100%; 
+    height: 4.1875rem;
+    border-bottom: .0625rem solid var(--Stroke, #e8e8e8);
+    background: #fff;
+  }
+  
+  
+  .search-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    gap: 1.5rem;
+  }
+  
+  .search-icon {
+    font-size: 1.2rem;
+    color: #a9a9a9; 
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  .profile-image {
+    width: 2.5rem; 
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: .625rem; 
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    font-size: .875rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .user-subtitle {
+    font-size: .75rem;
+    color: #555;
+  }
+  
