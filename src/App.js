@@ -19,10 +19,13 @@ import {
   faThumbsUp,
   faBroadcastTower,
   faChartArea,
+  faPlus
 } from "@fortawesome/free-solid-svg-icons";
 import splitPayLogo from "./assets/splitPayLogo.svg";
 import orangeMenuButtonIcon from "./assets/orangeMenuButtonIcon.svg";
-import userProfileImage from "./assets/userProfileImage.svg"
+import userProfileImage from "./assets/userProfileImage.svg";
+import MyCalendar from "./Components/Calendar/calendar";
+import Cards from "./Components/Cards/cards";
 
 function App() {
   return (
@@ -107,14 +110,40 @@ function App() {
             <FontAwesomeIcon icon={faCog} className="search-icon" />
           </div>
           <div className="user-profile">
-              <img src={userProfileImage} alt="User Profile" className="profile-image" />
-              <div className="user-info">
-                <div className="user-name">Leonardo Gomes</div>
-                <div className="user-subtitle">Unidade São Paulo</div>
-              </div>
-              </div>
+            <img
+              src={userProfileImage}
+              alt="User Profile"
+              className="profile-image"
+            />
+            <div className="user-info">
+              <div className="user-name">Leonardo Gomes</div>
+              <div className="user-subtitle">Unidade São Paulo</div>
+            </div>
+          </div>
         </header>
-        <body></body>
+        <body>
+        <section className="content">
+          <Cards />
+          <div className="agenda">
+            <div className="agenda-header">
+              <h2>Unidade São Paulo</h2>
+              <div className="week-days">
+                <div className="day">Seg</div>
+                <div className="day">Ter</div>
+                <div className="day">Qua</div>
+                <div className="day">Qui</div>
+                <div className="day">Sex</div>
+                <div className="day">Sáb</div>
+                <div className="day">Dom</div>
+              </div>
+              <button className="add-button">
+                <FontAwesomeIcon icon={faPlus} />
+              </button>
+            </div>
+            <MyCalendar/>
+          </div>
+        </section>
+        </body>
       </main>
     </div>
   );

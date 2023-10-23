@@ -30,6 +30,12 @@
   cursor: pointer;
 }
 
+.menu-button:hover{
+  background-color: #333;
+  color: #ff8321;
+  transition: ease .3s;
+}
+
 .menu-button img {
   width: 1.5rem;
   height: 1.5rem;
@@ -176,4 +182,79 @@ main {
 .user-subtitle {
   font-size: .75rem;
   color: #555;
+}
+
+
+.content {
+  padding: 1.25rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .625rem;
+}
+
+.card {
+  width: 12.5rem; 
+  height: 12.5rem; 
+  background-color: #fff; 
+  border: .0625rem solid #e8e8e8; 
+  box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+}
+
+.agenda {
+  background-color: #fff;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.agenda-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.week-days {
+  display: flex;
+  gap: .625rem;
+}
+
+.day {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: #ff8321;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.1);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  margin-bottom: .625rem;
+  display: flex;
+  align-items: center;
 }
