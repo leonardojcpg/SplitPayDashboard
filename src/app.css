@@ -20,8 +20,8 @@ main {
 }
 
 .card {
-  width: 12.5rem; 
-  height: 12.5rem; 
+  width: 9.375rem; 
+  height: 9.375rem; 
   background-color: #fff; 
   border: .0625rem solid #e8e8e8; 
   box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.2);
@@ -34,3 +34,12 @@ main {
 }
 
 
+.dashboard.light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.dashboard.dark {
+  background-color: #121212;
+  color: #eee;
+}

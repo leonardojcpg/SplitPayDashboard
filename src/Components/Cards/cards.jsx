@@ -3,11 +3,11 @@ import "./styles.css";
 import funcionarios from "./assets/funcionarios.svg";
 import avaliacoes from './assets/avali.svg'
 import clients from "./assets/clients.svg"
-import exams from "./assets/exams.svg"
+import exams from "./assets/exams.svg";
 
-function Cards() {
+function Cards({ darkMode }) {
   return (
-    <div className="cards-container">
+    <div className={`cards-container ${darkMode ? "dark-mode" : ""}`}>
       <div className="card">
         <h1>Funcionários</h1>
         <img src={funcionarios} alt="" />
@@ -33,7 +33,6 @@ function Cards() {
         <img src={funcionarios} alt="" />
         <span>15</span>
       </div>
-
       <div className="filters">
         <h3>Pesquisa de Funcionários</h3>
         <select>
@@ -46,10 +45,7 @@ function Cards() {
           <option>Unidade</option>
         </select>
         <select>
-          <option>Unidade</option>
-        </select>
-        <select>
-          <option>Unidade</option>
+          <option>Região</option>
         </select>
         <button>Buscar</button>
       </div>

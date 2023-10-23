@@ -22,7 +22,7 @@
   
   .searchInput {
     margin-top: .625rem;
-    margin-left: 6.25rem;
+    margin-left: 4.25rem;
     width: 24.25rem;
     height: 2.5rem;
     flex-shrink: 0;
@@ -89,3 +89,16 @@
     color: #555;
   }
   
+  button{
+    padding: .375rem;
+    border-radius: .3125rem;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  button:hover{
+    color: #ff8321;
+    transition: ease .3s;
+  }
