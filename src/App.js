@@ -13,18 +13,30 @@ import {
   faCog,
   faQuestionCircle,
   faSignOut,
+  faSearch,
+  faComment,
+  faPaperPlane,
+  faThumbsUp,
+  faBroadcastTower,
+  faChartArea,
 } from "@fortawesome/free-solid-svg-icons";
-import splitPayLogo from "./assets/splitPayLogo.svg"
-import orangeMenuButtonIcon from './assets/orangeMenuButtonIcon.svg'
+import splitPayLogo from "./assets/splitPayLogo.svg";
+import orangeMenuButtonIcon from "./assets/orangeMenuButtonIcon.svg";
+import userProfileImage from "./assets/userProfileImage.svg"
+
 function App() {
   return (
     <div className="dashboard">
       <aside className="sidebar">
         <div className="logo">
-          <img src={splitPayLogo} alt="Logo"/>
+          <img src={splitPayLogo} alt="Logo" />
         </div>
         <button className="menu-button">
-          <img src={orangeMenuButtonIcon} alt="Menu Icon" className="menu-icon" />
+          <img
+            src={orangeMenuButtonIcon}
+            alt="Menu Icon"
+            className="menu-icon"
+          />
           Menu
         </button>
         <ul>
@@ -74,7 +86,36 @@ function App() {
           <a href="/">Sair</a>
         </div>
       </aside>
-      <main>{/* Conteúdo da dashboard */}</main>
+      <main className="dashboardContainer">
+        <header className="headerContainer">
+          <h1>Dashboard</h1>
+          <div className="search-container">
+            <input
+              type="text"
+              placeholder=" Pesquisar"
+              className="searchInput"
+            />
+            <FontAwesomeIcon icon={faSearch} className="search-icon-input" />
+          </div>
+          <div className="search-icons">
+            <FontAwesomeIcon icon={faCalendar} className="search-icon" />
+            <FontAwesomeIcon icon={faComment} className="search-icon" />
+            <FontAwesomeIcon icon={faPaperPlane} className="search-icon" />
+            <FontAwesomeIcon icon={faThumbsUp} className="search-icon" />
+            <FontAwesomeIcon icon={faBroadcastTower} className="search-icon" />
+            <FontAwesomeIcon icon={faChartArea} className="search-icon" />
+            <FontAwesomeIcon icon={faCog} className="search-icon" />
+          </div>
+          <div className="user-profile">
+              <img src={userProfileImage} alt="User Profile" className="profile-image" />
+              <div className="user-info">
+                <div className="user-name">Leonardo Gomes</div>
+                <div className="user-subtitle">Unidade São Paulo</div>
+              </div>
+              </div>
+        </header>
+        <body></body>
+      </main>
     </div>
   );
 }
